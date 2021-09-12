@@ -51,6 +51,12 @@ body {
     margin: 1em;
 }
 
+h3 {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Lora";
+}
+
 h4 {
     background-color: #656D4A;
     padding: 0.5em;
@@ -58,10 +64,17 @@ h4 {
     color: #EDE0D4;
     font-size: 1.5em;
     text-shadow: 1px 1px 2px black;
+    font-family: "Lora";
 }
 
 .formcontainer {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.formcontainer > div {
+    align-self: center;
+    font-family: "Lato";
 }
 
