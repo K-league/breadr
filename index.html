@@ -36,8 +36,12 @@
             <div class="recipestep" id="step1">
                 <h4>1. Prepare Starter</h4>
                 <p>Feeding Time:</p>
+                <select id="hours"></select> : <select id="minutes"></select>
+                <select id="AMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
                 <p>Water Temperature:</p>
-                <p>Starter Temperature:</p>
                 <p>Ambient Temperature:</p>
                 <p>Time Starter is Ready:</p>
             </div>
@@ -101,7 +105,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
