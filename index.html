@@ -61,54 +61,117 @@
                 <label for="waterTempStarter">Water Temperature:</label>
                     <input type="number" id="waterTempStarter" name="waterTempStarter" placeholder="Water Temperature"> &#8457;<br>
                 <label for="ambientTempStarter">Ambient Temperature:</label>
-                    <input type="number" id="ambientTempStarter" name="waterTempStarter" placeholder="Ambient Temperature"> &#8457;<br>
+                    <input type="number" id="ambientTempStarter" name="ambientTempStarter" placeholder="Ambient Temperature"> &#8457;<br><br>
                 <input class="submit-btn" type="submit" value="Submit" id="starterButton"><br>
-                <p id="starterTime">Time Starter is Ready:</p>
+                <p id="starterTime">Starter is Ready at:</p>
                 <p id="starterTimeResult"></p>
             </div>
 
             <div class="recipestep" id="step2">
                 <h4>2. Mix Leaven</h4>
                 <p>Time Leaven Mixed:</p>
-                <p>Leaven Temperature:</p>
-                <p>Ambient Temperature: </p>
+                <select id="leavenMixedHours"></select> : <select id="leavenMixedMinutes"></select>
+                <select id="leavenMixedAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br>
+                <p>Feeding Time:</p>
+                <select id="feedingHours"></select> : <select id="feedingMinutes"></select>
+                <select id="feedingAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label for="leavenTemp">Leaven Temperature:</label>
+                    <input type="number" id="leavenTemp" name="leavenTemp" placeholder="Leaven Temp">&#8457;<br>
+                <label for="ambientTempLeaven">Ambient Temperature:</label>
+                    <input type="number" id="ambientTempLeaven" name="ambientTempLeaven" placeholder="Ambient Temperature"> &#8457;<br><br>
+                <input class="submit-btn-leaven" type="submit" value="Submit"><br>
+                <p id="leavenReadyTime">Leaven is Ready at:</p>
             </div>
 
             <div class="recipestep" id="step3">
                 <h4>3. Mix Dough</h4>
-                <p>Water Temperature:</p>
-                <p>Flour Temperature:</p>
-                <p>Final Dough Temperature:</p>
-                <p>Autolyse Length in Minutes:</p>
+                <p>Dough Mix Start Time:</p>
+                <select id="doughMixHours"></select> : <select id="doughMixMinutes"></select>
+                <select id="doughMixAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label for=waterTempMixDough>Water Temperature: </label>
+                    <input type="number" name="waterTempMixDough" id="waterTempMixDough" placeholder="Water Temperature"> &#8457; <br>
+                <label for="flourTemp"> Flour Temperature </label>
+                    <input type="number" name="flourTemp" id="flourTemp" placeholder="Flour Temperature"> &#8457;<br>
+                <label for="finalDoughTempMixDough">Final Dough Temperature:</label>
+                    <input type="number" name="finalDoughTempMixDough" id="finalDoughTempMixDough" placeholder="Final Dough Temperature">&#8457;<br>
+                <label for=autolyseTime>Autolyse Length in Minutes:</label>
+                    <input type="number" name="autolyseTime" id="autolyseTime" placeholder="Autolyse length in minutes"><br><br>
+                <input class="submit-btn-dough-mix" type="submit" value="Submit"><br>
+                <p id="doughMixReadyTime">Dough Mix is Ready at:</p>
+
             </div>
 
             <div class="recipestep" id="step4">
                 <h4>4. Bulk Fermentation</h4>
-                <p>Mix Time after Autolyse:</p>
-                <p>Ambient Temperature:</p>
-                <p>Time of Fold 1:</p>
-                <p>Time of Fold 2: (add option to keep adding folds)</p>
-                <p>Bulk Fermentation End Time:</p>
+                <p>Mix Start Time After Autolyse:</p>
+                <select id="fermentationMixHours"></select> : <select id="fermentationMixMinutes"></select>
+                <select id="fermentationMixAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label for="ambientTempFermentation">Ambient Temperature:</label>
+                    <input type="number" id="ambientTempFermentation" name="ambientTempFermentation" placeholder="Ambient Temperature"> &#8457;<br><br>
+                <input class="submit-btn-fermentation" type="submit" value="Submit"><br>
+                <p id="fermentationReadyTime">Bulk Fermentation is Ready at:</p>
             </div>
 
             <div class="recipestep" id="step5">
                 <h4>5. Divide & Shape Dough</h4>
-                <p>Bench Rest Length:</p>
-                <p>Dough Temperature:</p>
-                <p>Ambient Temperature:</p>
+                <p>Bench Rest Start Time:</p>
+                <select id="benchRestStartHours"></select> : <select id="benchRestStartMinutes"></select>
+                <select id="benchRestStartAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label for="benchRestLengthTime">Bench Rest Time Length in Minutes:</label>
+                    <input type="number" name="benchRestLengthTime" id="benchRestLengthTime"><br>
+                <label for="shapeDoughTemp">Dough Temperature:</label>
+                    <input type="number" name="shapeDoughTemp" id="shapeDoughTemp"> &#8457;<br>
+                <label for="shapeDoughAmbientTemp">Ambient Temperature:</label>
+                    <input type="number" name="shapeDoughAmbientTemp" id="shapeDoughAmbientTemp"> &#8457;<br><br>
+                <input class="submit-btn-bench-rest" type="submit" value="Submit"><br>
+                <p id="benchRestReadyTime">Bench Rest is done at:</p>
             </div>
 
             <div class="recipestep" id="step6">
                 <h4>6. Final Rise / Proofing</h4>
-                <p>Ambient Temperature:</p>
-                <p>Proofing Time Length:</p>
-                <p>Ready at what time?</p>
+                <p>Bench Rest End Time:</p>
+                <select id="benchRestEndHours"></select> : <select id="benchRestEndMinutes"></select>
+                <select id="benchRestStartAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label for="proofingAmbientTemp">Ambient Temperature:</label>
+                    <input type="number" name="proofingAmbientTemp" id="proofingAmbientTemp"> &#8457;<br>
+                <label for="proofingTimeLength">Proofing Time Length in Minutes:</label>
+                    <input type="number" name="proofingTimeLength" id="proofingTimeLength"><br><br>
+                <input class="submit-btn-proofing" type="submit" value="Submit"><br>
+                <p id="proofingReadyTime">Final Rise / Proofing is Ready at:</p>
             </div>
 
             <div class="recipestep" id="step7">
                 <h4>7. Bake!</h4>
-                <p>Bake Temperature:</p>
-                <p>Bake Length:</p>
+                <p>Bake Start Time:</p>
+                <select id="bakeStartHours"></select> : <select id="bakeStartMinutes"></select>
+                <select id="bakeStartAMPM">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select><br><br>
+                <label>Bake Temperature:</label>
+                    <input type="number" name="bakeTemp" id="bakeTemp"> &#8457;<br>   
+                <label for="bakeLengthTime">Bake Length in Minutes:</label>
+                    <input type="number" name="bakeLengthTime" id="bakeLengthTime"><br><br>
+                <input class="submit-btn-bake" type="submit" value="Submit"><br>
+                <p id="breadReadyTime">Bread is Ready at:</p>
             </div>
 
         </div>
