@@ -57,7 +57,7 @@
                 <select id="starterAMPM">
                     <option value="am">AM</option>
                     <option value="pm">PM</option>
-                </select><br>
+                </select><br><br>
                 <label for="waterTempStarter">Water Temperature:</label>
                     <input type="number" id="waterTempStarter" name="waterTempStarter" placeholder="Water Temperature"> &#8457;<br>
                 <label for="ambientTempStarter">Ambient Temperature:</label>
@@ -72,12 +72,6 @@
                 <p>Time Leaven Mixed:</p>
                 <select id="leavenMixedHours"></select> : <select id="leavenMixedMinutes"></select>
                 <select id="leavenMixedAMPM">
-                    <option value="am">AM</option>
-                    <option value="pm">PM</option>
-                </select><br>
-                <p>Feeding Time:</p>
-                <select id="feedingHours"></select> : <select id="feedingMinutes"></select>
-                <select id="feedingAMPM">
                     <option value="am">AM</option>
                     <option value="pm">PM</option>
                 </select><br><br>
@@ -132,11 +126,11 @@
                     <option value="pm">PM</option>
                 </select><br><br>
                 <label for="benchRestLengthTime">Bench Rest Time Length in Minutes:</label>
-                    <input type="number" name="benchRestLengthTime" id="benchRestLengthTime"><br>
+                    <input type="number" name="benchRestLengthTime" id="benchRestLengthTime" placeholder="Bench Rest Time Length in Minutes"><br>
                 <label for="shapeDoughTemp">Dough Temperature:</label>
-                    <input type="number" name="shapeDoughTemp" id="shapeDoughTemp"> &#8457;<br>
+                    <input type="number" name="shapeDoughTemp" id="shapeDoughTemp" placeholder="Dough Temperature"> &#8457;<br>
                 <label for="shapeDoughAmbientTemp">Ambient Temperature:</label>
-                    <input type="number" name="shapeDoughAmbientTemp" id="shapeDoughAmbientTemp"> &#8457;<br><br>
+                    <input type="number" name="shapeDoughAmbientTemp" id="shapeDoughAmbientTemp" placeholder="Ambient Temperature"> &#8457;<br><br>
                 <input class="submit-btn" type="submit" value="Submit" id="benchRestButton"><br>
                 <p id="benchRestReadyTime">Bench Rest is done at:</p>
             </div>
@@ -150,9 +144,9 @@
                     <option value="pm">PM</option>
                 </select><br><br>
                 <label for="proofingAmbientTemp">Ambient Temperature:</label>
-                    <input type="number" name="proofingAmbientTemp" id="proofingAmbientTemp"> &#8457;<br>
+                    <input type="number" name="proofingAmbientTemp" id="proofingAmbientTemp" placeholder="Ambient Temperature"> &#8457;<br>
                 <label for="proofingTimeLength">Proofing Time Length in Minutes:</label>
-                    <input type="number" name="proofingTimeLength" id="proofingTimeLength"><br><br>
+                    <input type="number" name="proofingTimeLength" id="proofingTimeLength" placeholder="Proofing Time Length in Minutes"><br><br>
                 <input class="submit-btn" type="submit" value="Submit" id="proofingButton"><br>
                 <p id="proofingReadyTime">Final Rise / Proofing is Ready at:</p>
             </div>
@@ -166,9 +160,9 @@
                     <option value="pm">PM</option>
                 </select><br><br>
                 <label>Bake Temperature:</label>
-                    <input type="number" name="bakeTemp" id="bakeTemp"> &#8457;<br>   
-                <label for="bakeLengthTime">Bake Length in Minutes:</label>
-                    <input type="number" name="bakeLengthTime" id="bakeLengthTime"><br><br>
+                    <input type="number" name="bakeTemp" id="bakeTemp" placeholder="Bake Temperature"> &#8457;<br>   
+                <label for="bakeLengthTime">Bake Time Length in Minutes:</label>
+                    <input type="number" name="bakeLengthTime" id="bakeLengthTime" placeholder="Bake Time Length in Minutes"><br><br>
                 <input class="submit-btn" type="submit" value="Submit" id="bakeButton"><br>
                 <p id="breadReadyTime">Bread is Ready at:</p>
             </div>
