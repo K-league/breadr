@@ -13,31 +13,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <title>Breadr</title>
 </head>
+
 <body>
-    <h2>Hi this is Breadr</h2>
 
     <header>
-        <div class="navbar">
+        <div class="navbar">      
             <ul>
-                <li>Home</li>
-                <li>Contact Us</li>
-                <li>Sign In</li>
-                <li>My Bakes</li>
-                <li>Helpful Links</li>
-                <li>Products</li>
+                <li>
+                    <a href="index.html">HOME</a> 
+                </li>
+                <li> 
+                    <a href="signin.html ">SIGN IN</a>
+                </li>
+                <li> 
+                    <a href="contact.html">CONTACT US</a>
+                </li>
+                <li>
+                    <a href="mybakes.html">MY BAKES</a>
+                </li>
+                <li>
+                    <a href="links.html">HELPFUL LINKS</a>
+                </li>
+                <li>
+                    <a href="products.html">PRODUCTS</a>
+                </li>
             </ul>
         </div>
     </header>
 
+    <div class="spaceholder">
+
+    </div>
+
     <main>
+    
         <div class="formcontainer">
             <h3>Today's Bake</h3>
 
             <div class="recipestep" id="step1">
                 <h4>1. Prepare Starter</h4>
                 <p>Feeding Time:</p>
-                <select id="hours"></select> : <select id="minutes"></select>
-                <select id="AMPM">
+                <select id="starterHours"></select> : <select id="starterMinutes"></select>
+                <select id="starterAMPM">
                     <option value="am">AM</option>
                     <option value="pm">PM</option>
                 </select><br>
@@ -45,8 +62,9 @@
                     <input type="number" id="waterTempStarter" name="waterTempStarter" placeholder="Water Temperature"> &#8457;<br>
                 <label for="ambientTempStarter">Ambient Temperature:</label>
                     <input type="number" id="ambientTempStarter" name="ambientTempStarter" placeholder="Ambient Temperature"> &#8457;<br><br>
-                <input class="submit-btn-starter" type="submit" value="Submit"><br>
+                <input class="submit-btn" type="submit" value="Submit" id="starterButton"><br>
                 <p id="starterTime">Starter is Ready at:</p>
+                <p id="starterTimeResult"></p>
             </div>
 
             <div class="recipestep" id="step2">
@@ -175,3 +193,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="script.js"></script>
+
