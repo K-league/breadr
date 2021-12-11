@@ -1,5 +1,8 @@
 ## Welcome to Breadr! 
 
+<img width="1437" alt="Screen Shot 2021-12-10 at 10 38 07 PM" src="https://user-images.githubusercontent.com/72477216/145663991-cd136174-6bd0-4191-9ad9-58cd638c2908.png">
+
+
 Use this tool to help you calculate the amount of time needed for your bake! The "Today's Bake Calculator" allows users to time their bake from starter to bake. This tool, broken down into seven steps, takes the user through feeding the start to timing thier final bake time!
 <br>
 
@@ -55,3 +58,6 @@ _Next_, open the [index.html](./index.html), then press Option + b for Mac OS. O
 <br>
 
 [Kayleigh Hanna](https://github.com/K-league)
+
+## Deployed Link
+[Breadr](https://k-league.github.io/breadr/)
